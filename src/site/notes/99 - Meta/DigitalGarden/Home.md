@@ -1,4 +1,4 @@
 ---
-{"dg-publish":true,"permalink":"/99 - Meta/DigitalGarden/Home/","tags":["gardenEntry"]}
+{"dg-publish":true,"dg-path":"Home.md","permalink":"/Home/","tags":["gardenEntry"]}
 ---
 
