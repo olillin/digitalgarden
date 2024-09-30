@@ -1,43 +1,11 @@
 ---
-{"dg-publish":true,"dg-path":"TMV200 - Diskret Matematik/Lektionsanteckningar/2024-09-05.md","permalink":"/TMV200 - Diskret Matematik/Lektionsanteckningar/2024-09-05/"}
+{"dg-publish":true,"dg-path":"TMV200 - Diskret Matematik/Lektionsanteckningar/Samlingar/Mängdlära.md","permalink":"/TMV200 - Diskret Matematik/Lektionsanteckningar/Samlingar/Mängdlära/"}
 ---
 
-## Logik
 
-1) Associativitet för konjunktion:
-$(p\land q)\land r\land r\iff p\land(q\land r)$
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/tmv-200-diskret-matematik/lektionsanteckningar/2024-09-05/#maengdlaera" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
-2) $p\land(q\lor r)\iff(p\land q)\lor(p\land r)$
 
-### Logiska argument
-
-1) 
-$p$
-$p\rightarrow q$
-—
-$q$
-
-2) 
-$q$
-$p\rightarrow q$
-—
-$p$
-
-### Kvantorer
-
-$$\forall x:(P(x)\land Q(x))\iff(\forall x:P(x))\land(\forall x:Q(x))$$
-
-$$\exists x:(P(x)\lor Q(x))\iff(\exists x:P(x))\lor(\exists x:Q(x))$$
-
-$$(\forall x:P(x))\lor(\forall x:Q(x))\implies\forall x:(P(x)\lor Q(x))$$
-
-$$\exists x:(P(x)\land Q(x))\implies(\exists x:P(x))\land(\exists x:Q(x))$$
-
-#### Motexempel
-
-$$\neg(\forall x:P(x))\iff \exists x:\neg P(x)$$
-
-$$\neg(\exists x:P(x))\iff\forall x:\neg P(x)$$
 
 ## Mängdlära
 
@@ -62,13 +30,13 @@ Givet ett universum $u$ och ett predikat $P(x)$, kan definiera $A=\set{x\in u:P(
 
 #### Notation
 
-$$[a,b]=\set{x\in\mathbb{R}:a\leq x\leq b}$$
+$[a,b]=\set{x\in\mathbb{R}:a\leq x\leq b}$
 
-$$[a,b)=\set{x\in\mathbb{R}:a\leq x<b}$$
+$[a,b)=\set{x\in\mathbb{R}:a\leq x<b}$
 
-$$(a,b]=\set{x\in\mathbb{R}:a<x\leq b}$$
+$(a,b]=\set{x\in\mathbb{R}:a<x\leq b}$
 
-$$(a,b)=\set{x\in\mathbb{R}:a<x<b}$$
+$(a,b)=\set{x\in\mathbb{R}:a<x<b}$
 
 ### Kardinalitet
 
@@ -76,4 +44,8 @@ För en ändlig mängd $A$ är $|A|$ storleken på $A$ (d.v.s. antalet element i
 
 #### Exempel
 
-$$A=\set{1,2,3,4,5}\implies|A|=5$$
+$A=\set{1,2,3,4,5}\implies|A|=5$
+
+
+</div></div>
+
