@@ -104,53 +104,15 @@ $\enspace=3^6-3*2^6-3*1+0= 540$
 #### Generalisering
 
 Hur många funktioner från $A$ till $B$ finns det om $\lvert A \rvert=n,\enspace\lvert B \rvert=m,\enspace m<n$
+
 $C_{i}=\{ f:A\to B,\enspace\nexists{x \in A}\text{ där }f(x)=B_{i} \}$
 $\lvert D \rvert=\lvert C \rvert-\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert$
 
 $\lvert C \rvert =m^n$
 
-$\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert=\left\lvert  \bigcup_{i=1}^{n}A_{i}  \right\rvert=\sum_{i=1}^{n}\lvert A_{i} \rvert -\sum_{i,j;i<j}  \lvert A_{i}\cap A_{j} \rvert +\sum_{i,j,k;i<j<k} \lvert A_{i}\cap A_{j}\cap A_{k} \rvert-\dots \pm \sum_{i,} \dots$
-$\enspace=\sum_{i=1}^{m}(-1)^{(i+1)}(m-i)^n$
+$\lvert D \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
 
-
-
-$\lvert D_{1} \rvert=\sum_{i=0}^{m}(-1)^{i}(m-i)^n$
-$\lvert D_{2} \rvert=\sum_{i=0}^{m}(-1)^{i}{m\choose i+1}(m-i)^n$
-
-##### Test 1:
-> $n=6,\enspace m=3$
-> $\lvert D_{1} \rvert=\sum_{i=0}^{3}(-1)^{i}(3-i)^6$
-> $\enspace=(-1)^{0}(3-0)^6+(-1)^{1}(3-1)^6+(-1)^{2}(3-2)^6+(-1)^{3}(3-3)^6$
-> $\enspace=3^6-2^6+1^6-0^6$
-> $\enspace=729-64+6-0=671$❌
-> 
-> $|D_{2}|=\sum_{i=0}^{3}(-1)^i{3\choose{i+1}}(3-i)^6$
-> $\enspace=(-1)^0{3\choose{0+1}}(3-0)^6+(-1)^1{3\choose{1+1}}(3-1)^6+(-1)^2{3\choose{2+1}}(3-2)^6+(-1)^3{3\choose{3+1}}(3-3)^6$
-> $\enspace={3\choose{1}}3^6-{3\choose{2}}2^6+{3\choose{3}}1^6-{3\choose{4}}0^6$
-> $\enspace=3*729-3*64+1*1-0*0=1996$❌
-
-
-$\lvert D_{3} \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
-
-##### Test 2
-> $n=6,\enspace m=3$
-> 
-> $|D_{3}|=3^6+\sum_{i=1}^{3}(-1)^i{3\choose{i}}(3-i)^6$
-> $\enspace=3^6-(-1)^1{3\choose{1}}(3-1)^6+(-1)^2{3\choose{2}}(3-2)^6+(-1)^3{3\choose{3}}(3-3)^6$
-> $\enspace=3^6-{3\choose{2}}2^6+{3\choose{3}}1^6-{3\choose{4}}0^6$
-> $\enspace=729-3*64+3*1-1*0$
-> $\enspace=540$✔
-
-##### Test 3
-> $n=2,\enspace m=2$
-> 
-> $\lvert D \rvert=2^2+\sum_{i=1}^{2}(-1)^{i}{2\choose i}(2-i)^2$
-> $\enspace=4+(-1)^{1}{2\choose 1}(2-1)^2+(-1)^{2}{2\choose 2}(2-2)^2$
-> $\enspace=4-2(1)^2+{1}(0)^2$
-> $\enspace=4-2+0$
-> $\enspace=2$✔
-
-> [!check] Svar
+> [!check] Formellt svar
 > 
 > Antalet funktioner $A\to B$: $C$
 > Antalet surjektiva funktioner $A\to B$: $D$
@@ -167,6 +129,38 @@ $\lvert D_{3} \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
 > $\lvert D \rvert=\lvert C \rvert-\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert$
 > 
 > $\lvert D \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
+##### Test
+> $n=6,\enspace m=3$
+> 
+> $|D|=3^6+\sum_{i=1}^{3}(-1)^i{3\choose{i}}(3-i)^6$
+> $\enspace=3^6-(-1)^1{3\choose{1}}(3-1)^6+(-1)^2{3\choose{2}}(3-2)^6+(-1)^3{3\choose{3}}(3-3)^6$
+> $\enspace=3^6-{3\choose{2}}2^6+{3\choose{3}}1^6-{3\choose{4}}0^6$
+> $\enspace=729-3*64+3*1-1*0$
+> $\enspace=540$✔
 
+> $n=2,\enspace m=2$
+> 
+> $\lvert D \rvert=2^2+\sum_{i=1}^{2}(-1)^{i}{2\choose i}(2-i)^2$
+> $\enspace=4+(-1)^{1}{2\choose 1}(2-1)^2+(-1)^{2}{2\choose 2}(2-2)^2$
+> $\enspace=4-2(1)^2+{1}(0)^2$
+> $\enspace=4-2+0$
+> $\enspace=2$✔
+##### Misslyckad experimentering
+$\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert=\left\lvert  \bigcup_{i=1}^{n}A_{i}  \right\rvert=\sum_{i=1}^{n}\lvert A_{i} \rvert -\sum_{i,j;i<j}  \lvert A_{i}\cap A_{j} \rvert +\sum_{i,j,k;i<j<k} \lvert A_{i}\cap A_{j}\cap A_{k} \rvert-\dots \pm \sum_{i,} \dots$
+$\enspace=\sum_{i=1}^{m}(-1)^{(i+1)}(m-i)^n$
+
+$\lvert D_{1} \rvert=\sum_{i=0}^{m}(-1)^{i}(m-i)^n$
+$\lvert D_{2} \rvert=\sum_{i=0}^{m}(-1)^{i}{m\choose i+1}(m-i)^n$
+
+> $n=6,\enspace m=3$
+> $\lvert D_{1} \rvert=\sum_{i=0}^{3}(-1)^{i}(3-i)^6$
+> $\enspace=(-1)^{0}(3-0)^6+(-1)^{1}(3-1)^6+(-1)^{2}(3-2)^6+(-1)^{3}(3-3)^6$
+> $\enspace=3^6-2^6+1^6-0^6$
+> $\enspace=729-64+6-0=671$❌
+> 
+> $|D_{2}|=\sum_{i=0}^{3}(-1)^i{3\choose{i+1}}(3-i)^6$
+> $\enspace=(-1)^0{3\choose{0+1}}(3-0)^6+(-1)^1{3\choose{1+1}}(3-1)^6+(-1)^2{3\choose{2+1}}(3-2)^6+(-1)^3{3\choose{3+1}}(3-3)^6$
+> $\enspace={3\choose{1}}3^6-{3\choose{2}}2^6+{3\choose{3}}1^6-{3\choose{4}}0^6$
+> $\enspace=3*729-3*64+1*1-0*0=1996$❌
 
 </div></div>
