@@ -15,7 +15,10 @@ matris = [[3, 2],
           [1, 4]]
 ```
 
-I detta exempel är antalet rader i matrisen längden av den omgivande listan `matris` och antalet kolonner längden av den första listan `matris[0]`.
+Här är en rad ett *element* i listan `matris` (`[3, 2]` eller `[1, 4]`), antalet rader i matrisen är därför längden av listan `len(matris)`.
+
+Antalet antalet kolonner längden av den första listan `matris[0]`.
+
 För att hitta värdet av ett element i matrisen på rad `i` och kolonn `j` används den här koden:
 
 ```python
@@ -30,7 +33,14 @@ print(element) # Ger oss värdet 2
 
 Innan vi börjar med multiplikation gör vi ett enklare exempel, addition.
 För att summan av två matriser ska vara definierad krävs det att matriserna är av samma *typ*, d.v.s. att de har samma antal rader och kolonner.
-Addition av matriser görs så att varje element adderas med element på samma rad och kolonn:
+
+Addition av matriser görs så att varje element adderas med element på samma rad och kolonn, d.v.s. 
+
+$$C_{ij}=A_{ij}+B_{ij}$$
+
+Lägg även märke till att den resulterande matrisen $C$ är av samma typ som $A$ och $B$. Att känna till storleken av den resulterande matrisen gör det enklare för oss att skapa varje rad och kolonn i vår kod.
+
+En implementation av matrisaddition i Python kan se ut så här:
 
 ```python
 def matadd(A, B):
@@ -64,3 +74,4 @@ def matadd(A, B):
 ## Multiplikation av matriser
 
 Matrismultiplikation är något svårare och den resulterande. Kravet för att multiplikationen ska vara definierad är att antalet kolonner i matris A är samma som antalet rader i matris B, vi kallar denna gemensamma dimension för `n`.
+

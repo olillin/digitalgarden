@@ -164,7 +164,7 @@ $\lvert D_{3} \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
 > 
 > $C_{i}=\{ f:A\to B,\enspace\nexists{x \in A}\text{ där }f(x)=B_{i} \}$
 > 
-$\lvert D \rvert=\lvert C \rvert-\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert$
+> $\lvert D \rvert=\lvert C \rvert-\left\lvert  \bigcup_{i=1}^{m} C_{i} \right\rvert$
 > 
 > $\lvert D \rvert=m^n+\sum_{i=1}^{m}(-1)^{i}{m\choose i}(m-i)^n$
 
