@@ -1,24 +1,36 @@
-<svg id="emoji" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <g id="color">
-    <rect x="37.0753" y="36.0532" width="26.8836" height="18.1139" fill="#FFFFFF"/>
-    <polygon fill="#EA5A47" stroke="#EA5A47" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="50.2353,23.2 38.1,36 63.5,36"/>
-    <path fill="#EA5A47" d="M47.3,26l-6.4,6.0595v-8.5733c0-0.9313,0.7549-1.4162,1.6862-1.4162h3.0276 c0.9313,0,1.6862,0.4849,1.6862,1.4162C47.3,23.4862,47.3,26,47.3,26z"/>
-    <rect x="43" y="42" width="6" height="12" fill="#A57939"/>
-    <rect x="54" y="42" width="6" height="5" fill="#92D3F5"/>
-    <path fill="#B1CC33" d="M41.0059,28.3393c0-3.3123-3.4447-6.0025-7.6937-6.0025c-0.3549,0.0029-0.7095,0.025-1.0622,0.0662 c-1.7995-3.4553-5.7065-5.8554-10.2499-5.8554c-6.2478,0-11.3122,4.5286-11.3122,10.1144c0.0012,0.3692,0.0247,0.738,0.0704,1.1043 C7.9656,28.6665,6,30.8102,6,33.3136c0,3.3123,3.4446,6.0025,7.6936,6.0025c1.6151,0.0139,3.2056-0.4022,4.6137-1.207 c1.8177,1.4766,4.7264,2.4385,8.0154,2.4385c5.5105,0,9.9776-2.6875,9.9776-6.0025c-0.0009-0.2191-0.0214-0.4377-0.0612-0.6531 C39.0357,32.9904,41.0059,30.8453,41.0059,28.3393z"/>
-  </g>
-  <g id="hair"/>
-  <g id="skin"/>
-  <g id="skin-shadow"/>
-  <g id="line">
-    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="46,27 50.2353,23 64,35.0976 64,54 38,54 38,41.5482"/>
-    <rect x="43" y="42" width="6" height="12" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-    <rect x="54" y="42" width="6" height="5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
-    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="43.5,23 46.5,23 46.5,26"/>
-    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M31.245,39.3396"/>
-    <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="22.5,54 22.5,46.8269 17.5,42"/>
-    <line x1="23.0408" x2="25.885" y1="46.7265" y2="43.7657" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M41.0059,28.3393 c0-3.3123-3.4447-6.0025-7.6937-6.0025c-0.3549,0.0029-0.7095,0.025-1.0622,0.0662c-1.7995-3.4553-5.7065-5.8554-10.2499-5.8554 c-6.2478,0-11.3122,4.5286-11.3122,10.1144c0.0012,0.3692,0.0247,0.738,0.0704,1.1043C7.9656,28.6665,6,30.8102,6,33.3136 c0,3.3123,3.4446,6.0025,7.6936,6.0025c1.6151,0.0139,3.2056-0.4022,4.6137-1.207c1.8177,1.4766,4.7264,2.4385,8.0154,2.4385 c5.5105,0,9.9776-2.6875,9.9776-6.0025c-0.0009-0.2191-0.0214-0.4377-0.0612-0.6531 C39.0357,32.9904,41.0059,30.8453,41.0059,28.3393z"/>
-    <line x1="63.5" x2="42.5" y1="36" y2="36" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-9df816f2-8391-4faf-8256-c502de4bcb91" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .uuid-d098d951-2049-4ed5-8c1e-d57eca6a28b9 {
+        fill: #2e2c31;
+      }
+
+      .uuid-d098d951-2049-4ed5-8c1e-d57eca6a28b9, .uuid-fd9e53e7-3b69-401a-95c0-e23f0f43acf1 {
+        stroke-width: 0px;
+      }
+
+      .uuid-d9d092db-6a54-4d6d-8ca1-806c3a9a7e12 {
+        fill: none;
+        stroke: #2e2c31;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .uuid-fd9e53e7-3b69-401a-95c0-e23f0f43acf1 {
+        fill: url(#uuid-0916d03a-59c3-4e31-a3b9-c67b0d74c5af);
+      }
+    </style>
+    <linearGradient id="uuid-0916d03a-59c3-4e31-a3b9-c67b0d74c5af" x1="248.09" y1="135.38" x2="257.92" y2="625.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5bc1a1"/>
+      <stop offset="1" stop-color="#438c90"/>
+    </linearGradient>
+  </defs>
+  <g id="uuid-7bb9af91-c92d-490b-a940-f10d4bb6e2a3" data-name="Logo">
+    <path class="uuid-fd9e53e7-3b69-401a-95c0-e23f0f43acf1" d="M500,239.29C495.12,110.15,392.34,6.08,263.73-.83h-27.26C112.1,5.85,11.89,103.4,1,226.61v44.58c10.69,120.98,107.5,217.21,228.74,226.98h40.71c125.45-10.11,224.75-112.78,229.54-239.66v-19.23Z"/>
+    <rect class="uuid-d9d092db-6a54-4d6d-8ca1-806c3a9a7e12" x="217.31" y="227.04" width="32.06" height="67.25" rx="4.19" ry="4.19" transform="translate(252.66 -88.64) rotate(45)"/>
+    <path class="uuid-d098d951-2049-4ed5-8c1e-d57eca6a28b9" d="M320,85.06h0c6.62,0,11.99,5.37,11.99,11.99v165.88h-23.99V97.06c0-6.62,5.37-11.99,11.99-11.99Z" transform="translate(216.76 -175.31) rotate(45)"/>
+    <path class="uuid-d098d951-2049-4ed5-8c1e-d57eca6a28b9" d="M212.3,320.17c2.22,23.85-16.02,41.06-39.17,47.2-13.83,3.67-25.3,25.7-34.14,16.49-6.55-6.83-12.12-45.51-13.06-55.66-2.22-23.85,15.32-44.98,39.17-47.2,23.85-2.22,44.98,15.32,47.2,39.17Z"/>
+    <path class="uuid-d098d951-2049-4ed5-8c1e-d57eca6a28b9" d="M459.23,386.07H40.98c1.78,2.7,3.6,5.37,5.47,8h407.29c1.88-2.63,3.71-5.3,5.49-8Z"/>
   </g>
 </svg>
