@@ -65,62 +65,92 @@ $A^T=\left[\begin{array}{cc}1 &4\\ 2 &5\\ 3 &6\end{array}\right]$
 
 Ett element i den transponerade matrisen definieras som $A^T_{ij}=A_{ji}$
 
+### Algoritmen för matrisoperationer
+
 Detta här är algoritmen vi kommer använda för våra matrisoperationer:
 
 1. Definiera dimensionerna av våra inmatade matriser.
 2. Kontrollera att de inmatade matriserna är av godtycklig typ om applicerbart.
-3. Skapa en tom lista som kommer bli vår resulterande matris.
-4. Skapa varje rad i matrisen med en for-loop.
-    1. Skapa en tom lista för vår rad.
-    2. Beräkna och lägg till värdet av varje element i raden med en for-loop.
-    3. Lägg till raden i matrisen.
+3. Skapa en tom matris med rätt dimensioner.
+4. Iterera genom varje rad i matrisen:
+	1. Iterera genom varje element på raden och beräkna det nya värdet.
+
+#### Skapa en tom matris
+
+För att skapa en ny matris *C* av typen $m\times n$ använder följande uttryck:
+
+```python
+C = [[0]*n for _ in range(m)]
+```
+
+Detta uttryck använder sig av både *listmultiplikation* och *listkonkatenering*:
+
+##### Listmultiplikation
+
+**Listmultiplikation** låter oss upprepa en lista ett visst antal gånger används som följer:
+
+```python
+[1, 2, 3] * 2 # = [1, 2, 3, 1, 2, 3]
+['a', 'b'] * 4 # = ['a', 'b', 'a', 'b', 'a', 'b', 'a', 'b']
+```
+
+##### Listkonkatenering
+
+**Listkonkatenering** tar alla värden i en lista och skapar en ny lista. Det kan dels användas för att skapa en kopia av en lista, men är verkligen användbart tillsammans med ett *uttryck* som ger varje element ett nytt värde utifrån värdet i den ursprungliga listan. Listkonkatenering skrivs som `[uttryck for x in a]` där *a* är den urprungliga listan och *x* är en variabel som antar värdet av varje element i listan *a*. `uttryck` ersätts med ett utryck som modifierar *x* på något sätt, t.ex. `x*2` eller `ord(x)`.
+
+Här är ett exempel på listkonkatenering och dess resultat:
+
+```python
+a = [1, 2, 3]
+[x*2 for x in a] # = [2, 4, 6]
+```
+
+### Implementation
 
 Implementationen av matristransponering kan se ut så här:
 
 ```python
 def transpose(A):
-	# 1. Definiera dimensioner av A
-	
-	# Antalet rader i A
+    # 1. Definiera dimensioner av A
+    
+    # Antalet rader i A
     m = len(A)
     # Antalet kolonner i A
     # Den här if-satsen är nödvändig för att undvika en IndexError om det
     # inte finns några rader när vi ska kolla längden av första raden
     n = len(A[0]) if len(A) > 0 else 0
-	
+    
     # 2. Kontrollera att matriserna är av godtycklig typ om applicerbart
     # Alla matriser har ett transponat
     
-    # 3. Skapa en tom lista som kommer bli vår resulterande matris
-    C = []
+    # 3. Skapa en tom matris C av typen n×m (n rader och m kolonner)
+    C = [[0]*m for _ in range(n)]
     
-    # C är av typen m×n (m rader och n kolonner)
-    
-    # 4. Skapa varje rad i C
-    for i in range(m):
-        # 4.1. Skapa en tom lista för vår rad
-        row = []
-        
-        # 4.2. Skapa varje element på raden
-        for j in range(n):
-            # Beräkna och lägg till värdet på elementet i raden
-            row.append(A[j][i])
-        
-        # 4.3. Lägg till raden i matrisen
-        C.append(row)
+    # 4. Iterera genom varje rad i C
+    for i in range(n):
+        # 4.1. Iterera genom varje element på raden
+        for j in range(m):
+            # Beräkna värdet på elementet
+            C[i][j] = A[j][i]
     
     return C
 ```
 
 ## Multiplikation av matriser
 
+### Skalärprodukten
+
 För att multiplicera två matriser behöver vi först bekanta oss med begreppet *skalärprodukt*. Om `a` och `b` är två listor av samma längd $n$ är **skalärprodukten** $a\cdot b$ samma som `a[0]*b[0] + a[1]*b[1] + ... + a[n]*b[n]`.
+
+### Hur fungerar matrismultiplikation?
 
 I produkten av en matrismultiplikation är värdet på ett element $C_{ij}$ en skalärprodukt mellan raden $i$ i matrisen $A$ och kolumnen $j$ i matrisen $B$.
 
 Eftersom listorna i en skalärprodukt måste vara av samma längd kan produkten mellan matriserna $A$ och $B$ bara vara definierad **om antalet kolonner i matris $A$ är samma som antalet rader i matris $B$**. Vi kallar denna gemensamma längd för $n$. Det kan även uttryckas som att $A$ har typen $m\times n$ och $B$ har typen $n\times p$.
 
-Implementationen av detta kan se ut så här:
+### Implementation
+
+En implementationen av matrismultiplikation med vår [[02 - Areas/School/Courses/TDA548 - Grundläggande programmering/Matrismatte för labb 2#Algoritmen för matrisoperationer\|algoritm från ovan]] kan se ut så här:
 
 ```python
 def matmul(A, B):
@@ -138,29 +168,19 @@ def matmul(A, B):
     if n != len(B):
         pass # Hantera fallet då matriserna inte kan multipliceras
     
-    # 3. Skapa en tom lista som kommer bli vår resulterande matris
-    C = []
+    # 3. Skapa en tom matris C av typen m×p (m rader och p kolonner)
+    C = [[0]*p for _ in range(m)]
     
-    # C är av typen m×p (m rader och p kolonner)
-    
-    # 4. Skapa varje rad i C
+    # 4. Iterera genom varje rad i C
     for i in range(m):
-        # 4.1. Skapa en tom lista för vår rad
-        row = []
-        
-        # 4.2. Skapa varje element på raden
+        # 4.1. Iterera genom varje element på raden
         for j in range(p):
-            # Beräkna och lägg till värdet på elementet i raden
-            
             # Beräkna skalärprodukten
             scalar = 0
             for k in range(n):
                 scalar += A[i][k] * B[k][j]
 	        
-			row.append(scalar)
-        
-        # 4.3. Lägg till raden i matrisen
-        C.append(row)
+			C[i][j] = scalar
     
     return C
 ```

@@ -93,7 +93,7 @@ Notation: $K_{n}:\text{fullständig graf på n noder}$
 
 ### Bipartit
 
-$G=(V,E)$ kallas *bipartit* om det finns delmängder $A\subseteq V,B\subseteq V$ så att $A\cup B=V,\enspace A\cup B=\emptyset$ och så att $\forall \{ x,y \}\in E:(x \in A\land y\in B)\lor(x \in B\land y\in A)$
+$G=(V,E)$ kallas *bipartit* om det finns delmängder $A\subseteq V,B\subseteq V$ så att $A\cup B=V,\enspace A\cap B=\emptyset$ och så att $\forall x,y\in E:(x \in A\land y\in B)\lor(x \in B\land y\in A)$
 
 > [!Tip] Tänk
 > Om en graf är bipartit kan alla noder färgläggas med två färger så att alla kanter går från en färg till en annan.
