@@ -83,11 +83,11 @@ För att skapa en ny matris *C* av typen $m\times n$ använder följande uttryck
 C = [[0]*n for _ in range(m)]
 ```
 
-Detta uttryck använder sig av både *listmultiplikation* och *listkonkatenering*:
+För att första detta uttryck behöver vi lära oss *listmultiplikation* och *listkonkatenering*:
 
 ##### Listmultiplikation
 
-**Listmultiplikation** låter oss upprepa en lista ett visst antal gånger används som följer:
+**Listmultiplikation** låter oss upprepa en lista ett visst antal gånger och används som följer:
 
 ```python
 [1, 2, 3] * 2 # = [1, 2, 3, 1, 2, 3]
@@ -104,6 +104,16 @@ Här är ett exempel på listkonkatenering och dess resultat:
 a = [1, 2, 3]
 [x*2 for x in a] # = [2, 4, 6]
 ```
+
+##### Vårt slutliga uttryck
+
+```python
+C = [[0]*n for _ in range(m)]
+```
+
+Uttrycket `[0]*n` skapar en *rad* i vår matris där *n* är antalet kolonner. Om t.ex. *n* är **3** så blir en rad `[0, 0, 0]`.
+
+För att skapa fler rader använder vi [[02 - Areas/School/Courses/TDA548 - Grundläggande programmering/Matrismatte för labb 2#listkonkatenering\|#listkonkatenering]]. Eftersom listkonkatenering skapar en lista av samma längd som den som matas in och vi vill att vår "matrislista" ska ha *m* element (rader) måste även den inmatade listan vara av längd *m*. Det görs enklast med den inbyggda `range(m)` funktionen i Python som skapar en lista `[0, 1,..., m-1]` vilket alltid har längden *m* om vi endast anger en parameter. Eftersom vi inte bryr oss om **elementen** i den ursprungliga listan (`range(m)`) utan endast **längden** av listan använder vi `_` som vår variabel vilket säger till Python att ignorera värdena av elementen i listan.
 
 ### Implementation
 
@@ -140,7 +150,7 @@ def transpose(A):
 
 ### Skalärprodukten
 
-För att multiplicera två matriser behöver vi först bekanta oss med begreppet *skalärprodukt*. Om `a` och `b` är två listor av samma längd $n$ är **skalärprodukten** $a\cdot b$ samma som `a[0]*b[0] + a[1]*b[1] + ... + a[n]*b[n]`.
+För att multiplicera två matriser behöver vi först bekanta oss med begreppet *skalärprodukt*. Om `a` och `b` är två listor av samma längd $n$ är **skalärprodukten** $a\cdot b$ samma som `a[0]*b[0] + a[1]*b[1] +... + a[n]*b[n]`.
 
 ### Hur fungerar matrismultiplikation?
 
