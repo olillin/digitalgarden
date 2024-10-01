@@ -115,6 +115,8 @@ Uttrycket `[0]*n` skapar en *rad* i vår matris där *n* är antalet kolonner. O
 
 För att skapa fler rader använder vi [[02 - Areas/School/Courses/TDA548 - Grundläggande programmering/Matrismatte för labb 2#listkonkatenering\|#listkonkatenering]]. Eftersom listkonkatenering skapar en lista av samma längd som den som matas in och vi vill att vår "matrislista" ska ha *m* element (rader) måste även den inmatade listan vara av längd *m*. Det görs enklast med den inbyggda `range(m)` funktionen i Python som skapar en lista `[0, 1,..., m-1]` vilket alltid har längden *m* om vi endast anger en parameter. Eftersom vi inte bryr oss om **elementen** i den ursprungliga listan (`range(m)`) utan endast **längden** av listan använder vi `_` som vår variabel vilket säger till Python att ignorera värdena av elementen i listan.
 
+Det slutliga resultatet är att vi får en lista som har *m* element där varje element är en lista av nollor med längden *n*. D.v.s. en **matris** med formen $m\times n$.
+
 ### Implementation
 
 Implementationen av matristransponering kan se ut så här:
