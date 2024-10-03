@@ -6,11 +6,11 @@ Först och främst, det här är min egen förklaring med direkt anknytning till
 
 ## Vad är en matris?
 
-En *matris* är en tabell av *element* som har ett antal *rader* och *kolonner*.
+En *matris* är en tabell av *element* som har ett antal *rader* och *kolumner*.
 
-En matris $A=\left[\begin{array}{cc} 1 &2 &3 \\ 4 &5 &6 \end{array}\right]$ har 2 rader och 3 kolonner. Man kan även säga att $A$ är av typen $2\times3$ eller att $A$ har *dimensionen* $(2,3)$.
+En matris $A=\left[\begin{array}{cc} 1 &2 &3 \\ 4 &5 &6 \end{array}\right]$ har 2 rader och 3 kolumner. Man kan även säga att $A$ är av typen $2\times3$ eller att $A$ har *dimensionen* $(2,3)$.
 
-Ett elementet på rad $i$ och kolonn $j$ i matrisen $A$ betecknas $A_{ij}$
+Ett elementet på rad $i$ och kolumn $j$ i matrisen $A$ betecknas $A_{ij}$
 I matrisen ovan är t.ex. $A_{21}=4$
 
 ## Matriser inom programmering
@@ -29,13 +29,13 @@ Här är en rad ett element i listan `matris` (`[3, 2]` eller `[1, 4]`), **antal
 > Lägg märke till ordet *element* kan ha flera betydelser i det här sammanhanget:
 > 
 > - Ett värde i en Python-lista på ett **index**.
-> - Ett värde i en matris på en **rad och kolonn**.
+> - Ett värde i en matris på en **rad och kolumn**.
 
-Att få ut en kolonn (`[3, 1]` eller `[2, 4]`) är inte lika enkelt som en rad eftersom en kolonn sträcker sig över flera listor. Som tur är kommer vi inte behöva det här eftersom vi endast kommer räkna på ett element i taget.
+Att få ut en kolumn (`[3, 1]` eller `[2, 4]`) är inte lika enkelt som en rad eftersom en kolumn sträcker sig över flera listor. Som tur är kommer vi inte behöva det här eftersom vi endast kommer räkna på ett element i taget.
 
-**Antalet kolonner** i matrisen är längden av våra rader. Vi tar värdet från den första raden för enkelhetens skull och får därför antalet kolonner med uttrycket: `len(matris[0])`.
+**Antalet kolumner** i matrisen är längden av våra rader. Vi tar värdet från den första raden för enkelhetens skull och får därför antalet kolumner med uttrycket: `len(matris[0])`.
 
-För att få värdet av ett element i matrisen på rad `i` och kolonn `j` används den här koden:
+För att få värdet av ett element i matrisen på rad `i` och kolumn `j` används den här koden:
 
 ```python
 matris  = [[3, 2],
@@ -51,11 +51,11 @@ print(element) # Ger oss värdet 2
 > [!note] Förklaring
 > Uttrycket `matris[i]` ger oss rad `i` i matrisen. Här är `i = 0` vilket innebär att `matris[i] == [3, 2]`. Efter detta tar vi elementet på indexet `j` i raden: `matris[i][j] == matris[0][1] == [3, 2][1] == 2`.
 > 
-> Lägg även märke till att matriser i Python börjar med rad och kolonn 0.
+> Lägg även märke till att matriser i Python börjar med rad och kolumn 0.
 
 ## Transponat
 
-Ett *transponat* av en matris $A$ noteras som $A^T$ och innebär att raderna och kolonnerna byts.
+Ett *transponat* av en matris $A$ noteras som $A^T$ och innebär att raderna och kolumnerna byts.
 
 T.ex:
 
@@ -111,7 +111,7 @@ a = [1, 2, 3]
 C = [[0]*n for _ in range(m)]
 ```
 
-Uttrycket `[0]*n` skapar en *rad* i vår matris där *n* är antalet kolonner. Om t.ex. *n* är **3** så blir en rad `[0, 0, 0]`.
+Uttrycket `[0]*n` skapar en *rad* i vår matris där *n* är antalet kolumner. Om t.ex. *n* är **3** så blir en rad `[0, 0, 0]`.
 
 För att skapa fler rader använder vi [[02 - Areas/School/Courses/TDA548 - Grundläggande programmering/Matrismatte för labb 2#listkonkatenering\|#listkonkatenering]]. Eftersom listkonkatenering skapar en lista av samma längd som den som matas in och vi vill att vår "matrislista" ska ha *m* element (rader) måste även den inmatade listan vara av längd *m*. Det görs enklast med den inbyggda `range(m)` funktionen i Python som skapar en lista `[0, 1,..., m-1]` vilket alltid har längden *m* om vi endast anger en parameter. Eftersom vi inte bryr oss om **elementen** i den ursprungliga listan (`range(m)`) utan endast **längden** av listan använder vi `_` som vår variabel vilket säger till Python att ignorera värdena av elementen i listan.
 
@@ -127,7 +127,7 @@ def transpose(A):
     
     # Antalet rader i A
     m = len(A)
-    # Antalet kolonner i A
+    # Antalet kolumner i A
     # Den här if-satsen är nödvändig för att undvika en IndexError om det
     # inte finns några rader när vi ska kolla längden av första raden
     n = len(A[0]) if len(A) > 0 else 0
@@ -135,7 +135,7 @@ def transpose(A):
     # 2. Kontrollera att matriserna är av godtycklig typ om applicerbart
     # Alla matriser har ett transponat
     
-    # 3. Skapa en tom matris C av typen n×m (n rader och m kolonner)
+    # 3. Skapa en tom matris C av typen n×m (n rader och m kolumner)
     C = [[0]*m for _ in range(n)]
     
     # 4. Iterera genom varje rad i C
@@ -158,7 +158,7 @@ För att multiplicera två matriser behöver vi först bekanta oss med begreppet
 
 I produkten av en matrismultiplikation är värdet på ett element $C_{ij}$ en skalärprodukt mellan raden $i$ i matrisen $A$ och kolumnen $j$ i matrisen $B$.
 
-Eftersom listorna i en skalärprodukt måste vara av samma längd kan produkten mellan matriserna $A$ och $B$ bara vara definierad **om antalet kolonner i matris $A$ är samma som antalet rader i matris $B$**. Vi kallar denna gemensamma längd för $n$. Det kan även uttryckas som att $A$ har typen $m\times n$ och $B$ har typen $n\times p$.
+Eftersom listorna i en skalärprodukt måste vara av samma längd kan produkten mellan matriserna $A$ och $B$ bara vara definierad **om antalet kolumner i matris $A$ är samma som antalet rader i matris $B$**. Vi kallar denna gemensamma längd för $n$. Det kan även uttryckas som att $A$ har typen $m\times n$ och $B$ har typen $n\times p$.
 
 ### Implementation
 
@@ -170,17 +170,17 @@ def matmul(A, B):
 	
 	# Antalet rader i A
     m = len(A)
-    # Antalet kolonner i A och rader i B
+    # Antalet kolumner i A och rader i B
     n = len(A[0]) if len(A) > 0 else 0
-    # Antalet kolonner i B
+    # Antalet kolumner i B
     p = len(B[0]) if len(B) > 0 else 0
 	
     # 2. Kontrollera att matriserna är av godtycklig typ
-    #    (kolonner i A == rader i B)
+    #    (kolumner i A == rader i B)
     if n != len(B):
         pass # Hantera fallet då matriserna inte kan multipliceras
     
-    # 3. Skapa en tom matris C av typen m×p (m rader och p kolonner)
+    # 3. Skapa en tom matris C av typen m×p (m rader och p kolumner)
     C = [[0]*p for _ in range(m)]
     
     # 4. Iterera genom varje rad i C
