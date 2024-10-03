@@ -2,6 +2,10 @@
 {"dg-publish":true,"dg-path":"TMV200 - Diskret Matematik/Kursinfo.md","permalink":"/TMV200 - Diskret Matematik/Kursinfo/"}
 ---
 
+## Aktuell information
+
+- 04/10: Elias övning inställd
+
 ## Varför diskret matematik?
 
 *Insert lång förklaring med många citat från matematiker*
@@ -47,12 +51,19 @@ Info finns på Canvas
 
 ## Examination
 
+- "Examinationsregler" finns på Canvas
+
+### Tentamen
+
 **Skriftlig tentamen: 26 okt kl. 14:00**
 
-- "Examinationsregler" finns på Canvas
 - Ungefärliga betygsgränser för tentan kommer senare.
 - Skriv en egen formelsamling att ta med, det får stå vad som helst på och de kontrolleras inte.
-- Godkända miniräknare är tillåtna.
+- Vissa godkända miniräknare är tillåtna men miniräknare behövs inte.
+- Tentan är längre än duggan.
+- Tentans struktur diskuteras internt.
+- Om Pierre får igenom sin vilja kommer det finnas 3 frågor i början som avgör om man får godkänt.
+
 ### Dugga
 
 Kursen har en frivillig dugga som kan ge upp till 4 bonuspoäng till tentan.
@@ -62,6 +73,11 @@ Kursen har en frivillig dugga som kan ge upp till 4 bonuspoäng till tentan.
 
 > [!warning]
 > Skriv till Pierre om du är godkänd för extra stöd för duggan.
+
+> [!note] Resultat
+> 
+> När resultat? När 400 duggor rättade
+> Resultat kommer på Ladok
 #### Poängräkning
 
 Duggan har 5 uppgifter som ger 4 poäng vardera, d.v.s. max 20 poäng. För varje 4 poäng på duggan får man ett bonuspoäng till tentan.
