@@ -148,6 +148,47 @@ def transpose(A):
     return C
 ```
 
+## Powers
+
+I `powers` skapar vi en ny matris $C$ från en **lista** $A$, ett tal $a$ vilket är vår *minsta potens*, och ett tal $b$ som är vår *största potens*. Typen av den resulterande matrisen är $\lvert A \rvert\times b-a+1$ och ett element i matrisen definieras enligt:
+
+$$
+C_{ij}=A_{i}^{a+j-1}
+$$
+
+Där det första elementet är $C_{11}$.
+
+### Implementation
+
+För att implementera funktionen använder vi samma algoritm som ovan med några små justeringar:
+
+```python
+def powers(A, a, b):
+    # 1. Definiera dimensioner av A
+    
+    # Antalet element i A
+    m = len(A)
+    
+    # Antalet kolumner i den resulterande matrisen C
+    n = b-a+1
+    
+    # 2. Kontrollera att matriserna är av godtycklig typ om applicerbart
+    # Vi behöver inte göra någon kontroll, eventuellt att a<=b men vi
+    # antar att det är inte nödvändigt
+    
+    # 3. Skapa en tom matris C av typen m×n (m rader och n kolumner)
+    C = [[0]*n for _ in range(m)]
+    
+    # 4. Iterera genom varje rad i C
+    for i in range(m):
+        # 4.1. Iterera genom varje element på raden
+        for j in range(n):
+            # Beräkna värdet på elementet
+            C[i][j] = A[i]**(a+j) # Inte j-1 eftersom j räknar från 0
+    
+    return C
+```
+
 ## Multiplikation av matriser
 
 ### Skalärprodukten
