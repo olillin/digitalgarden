@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Benji/Benji matte.md","permalink":"/Benji/Benji matte/","hide":true}
+{"dg-publish":true,"dg-path":"Hidden/Benji matte.md","permalink":"/Hidden/Benji matte/","hide":true}
 ---
 
 
