@@ -53,7 +53,7 @@ $(a,b)\in R$ skrivs $a R b$
 > $R$ är en ekvivalensrelation
 
 
-#### Definition
+#### Ekvivalensklass
 
 För en ekvivalensrelation $R$ på $A$, för $a\in A$ definierar vi: $[a]=\{b\in A:aRb\}$
 $[a]$ kallas för "$a
