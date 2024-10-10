@@ -8,9 +8,9 @@ Först och främst, det här är min egen förklaring med direkt anknytning till
 
 En *matris* är en tabell av *element* som har ett antal *rader* och *kolumner*.
 
-En matris $A=\left[\begin{array}{cc} 1 &2 &3 \\ 4 &5 &6 \end{array}\right]$ har 2 rader och 3 kolumner. Man kan även säga att $A$ är av typen $2\times3$ eller att $A$ har *dimensionen* $(2,3)$.
+En matris $A=\left[\begin{array}{cc} 1 &2 &3 \\ 4 &5 &6 \end{array}\right]$ har 2 rader och 3 kolumner. Man kan även säga att $A$ är av *typen* $2\times3$ eller att $A$ har *dimensionen* $(2,3)$.
 
-Ett elementet på rad $i$ och kolumn $j$ i matrisen $A$ betecknas $A_{ij}$
+Ett element på rad $i$ och kolumn $j$ i matrisen $A$ betecknas $A_{ij}$
 I matrisen ovan är t.ex. $A_{21}=4$
 
 ## Matriser inom programmering
@@ -180,9 +180,9 @@ def powers(A, a, b):
     C = [[0]*n for _ in range(m)]
     
     # 4. Iterera genom varje rad i C
-    for i in range(n):
+    for i in range(m):
         # 4.1. Iterera genom varje element på raden
-        for j in range(m):
+        for j in range(n):
             # Beräkna värdet på elementet
             C[i][j] = A[i]**(a+j) # Inte j-1 eftersom j räknar från 0
     

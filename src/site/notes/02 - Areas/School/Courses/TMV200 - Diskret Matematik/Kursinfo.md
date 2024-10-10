@@ -4,7 +4,7 @@
 
 ## Aktuell information
 
-- 04/10: Elias övning inställd
+- Studentrepresentanter finns på Canvas
 
 ## Varför diskret matematik?
 
@@ -58,7 +58,7 @@ Info finns på Canvas
 **Skriftlig tentamen: 26 okt kl. 14:00**
 
 - Ungefärliga betygsgränser för tentan kommer senare.
-- Skriv en egen formelsamling att ta med, det får stå vad som helst på och de kontrolleras inte.
+- Skriv en egen formelsamling/fusklapp att ta med, det får stå vad som helst på och de kontrolleras inte. Max 2 sidor A4 bak & fram.
 - Vissa godkända miniräknare är tillåtna men miniräknare behövs inte.
 - Tentan är längre än duggan.
 - Tentans struktur diskuteras internt.
