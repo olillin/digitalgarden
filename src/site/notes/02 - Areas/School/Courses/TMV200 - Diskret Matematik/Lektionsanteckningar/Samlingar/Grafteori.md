@@ -78,6 +78,7 @@
 <h4 data-heading="Exempel" dir="auto">Exempel</h4>
 <p dir="auto"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo></mjx-math></mjx-container></span><br>
 <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo></mjx-math></mjx-container></span></p>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
 <div data-callout-metadata="" data-callout-fold="" data-callout="note" class="callout node-insert-event"><div class="callout-title" dir="auto"><div class="callout-icon"><svg width="16" height="16"></svg></div><div class="callout-title-inner">Note</div></div><div class="callout-content">
 <p dir="auto">Det kan inte finnas <em>riktade</em> och <em>oriktade</em> kanter i samma graf. En oriktad graf kan representeras som en riktad graf där alla kanter är riktade åt båda håll. D.v.s:</p>
 <p dir="auto"><span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-n"><mjx-c class="mjx-c2203"></mjx-c></mjx-mi><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom><mjx-mstyle><mjx-mspace style="width: 0.5em;"></mjx-mspace></mjx-mstyle><mjx-mi class="mjx-n"><mjx-c class="mjx-c2200"></mjx-c></mjx-mi><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span></p>
@@ -112,24 +113,28 @@ En <em>Eulerväg</em> i <span class="math math-inline is-loaded"><mjx-container 
 <ul>
 <li dir="auto">Hitta kortare cykler och "bygg på dem"</li>
 </ul>
-<p dir="auto">Givet grafen G:<br>
-<div class="excalidraw-svg"><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="blob:app://obsidian.md/602b5a71-88c8-4dff-be06-2d967da553b0" filesource="99 - Meta/Drawings/Graf G steg 0 24-10-07.excalidraw.md" w="400" draggable="false" oncanvas="false"></div></p>
+<p dir="auto">Givet grafen G:</p>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
 <ol>
-<li dir="auto">
-<p>Börja med triangeln 1-2-3-1:<br>
-<div class="excalidraw-svg"><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="blob:app://obsidian.md/029b88f3-d404-45cd-9172-0dcef76ffb22" filesource="99 - Meta/Drawings/Graf G steg 1 24-10-07.excalidraw.md" w="400" draggable="false" oncanvas="false"></div></p>
-</li>
-<li dir="auto">
-<p>Ta bort kanterna från <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>:<br>
-<div class="excalidraw-svg"><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="blob:app://obsidian.md/979b0041-5da3-4f39-88e4-07ba88547476" filesource="99 - Meta/Drawings/Graf G steg 2 24-10-07.excalidraw.md" w="400" draggable="false" oncanvas="false"></div></p>
-</li>
-<li dir="auto">
-<p>Välj t.ex. 1-4-6-1 och ta bort kanterna:<br>
-<div class="excalidraw-svg"><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="blob:app://obsidian.md/b066cbe2-e8bb-4a87-8a3a-b41f8df2a262" filesource="99 - Meta/Drawings/Graf G steg 3 24-10-07.excalidraw.md" w="400" draggable="false" oncanvas="false"></div></p>
-</li>
+<li dir="auto">Börja med triangeln 1-2-3-1:</li>
 </ol>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
+<ol start="2">
+<li dir="auto">Ta bort kanterna från <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>:</li>
+</ol>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
+<ol start="3">
+<li dir="auto">Välj en till cykel, t.ex. 1-4-6-1, och ta bort kanterna:</li>
+</ol>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
 <p dir="auto">Även detta är en cykel: T.ex. 4-3-6-5-4.</p>
-<p dir="auto">De sammansatta cyklerna från steg 1-3 blir en Eulercykel.</p>
+<p dir="auto">De sammansatta cyklerna från steg 1-3 blir en Eulercykel:</p>
+<ol>
+<li dir="auto">1-2-3-1</li>
+<li dir="auto">1-4-6-1</li>
+<li dir="auto">4-3-6-5-4</li>
+</ol>
+<p dir="auto"><strong>TODO:</strong> Hur?</p>
 <div data-callout-metadata="" data-callout-fold="" data-callout="note" class="callout node-insert-event"><div class="callout-title" dir="auto"><div class="callout-icon"><svg width="16" height="16"></svg></div><div class="callout-title-inner">Note</div></div><div class="callout-content">
 <p dir="auto">Algoritmen är idén till beviset av 7.11</p>
 </div></div>
