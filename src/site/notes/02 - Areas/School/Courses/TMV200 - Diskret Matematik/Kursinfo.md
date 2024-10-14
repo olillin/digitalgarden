@@ -5,6 +5,7 @@
 ## Aktuell information
 
 - Studentrepresentanter finns på Canvas
+- Idag (2024-10-14): Albins övning inställd
 
 ## Varför diskret matematik?
 
@@ -57,12 +58,16 @@ Info finns på Canvas
 
 **Skriftlig tentamen: 26 okt kl. 14:00**
 
+> [!Note] Information på Canvas
+> https://chalmers.instructure.com/courses/31068/discussion_topics/182647
+
 - Ungefärliga betygsgränser för tentan kommer senare.
 - Skriv en egen formelsamling/fusklapp att ta med, det får stå vad som helst på och de kontrolleras inte. Max 2 sidor A4 bak & fram.
 - Vissa godkända miniräknare är tillåtna men miniräknare behövs inte.
 - Tentan är längre än duggan.
 - Tentans struktur diskuteras internt.
 - Om Pierre får igenom sin vilja kommer det finnas 3 frågor i början som avgör om man får godkänt.
+- Minst 10 poäng i början är bara svar, resten av formen ska vara samma.
 
 ### Dugga
 

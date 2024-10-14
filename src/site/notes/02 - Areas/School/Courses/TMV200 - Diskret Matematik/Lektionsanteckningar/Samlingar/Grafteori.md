@@ -124,7 +124,11 @@ En <em>Eulerväg</em> i <span class="math math-inline is-loaded"><mjx-container 
 </ol>
 <div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
 <ol start="3">
-<li dir="auto">Välj en till cykel, t.ex. 1-4-6-1, och ta bort kanterna:</li>
+<li dir="auto">Välj en till cykel, t.ex. 1-4-6-1:</li>
+</ol>
+<div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
+<ol start="4">
+<li dir="auto">Ta bort kanterna:</li>
 </ol>
 <div class="block-language-kale"><canvas class="kale-graph-canvas" width="700" height="350"></canvas></div>
 <p dir="auto">Även detta är en cykel: T.ex. 4-3-6-5-4.</p>
